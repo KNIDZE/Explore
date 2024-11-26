@@ -1,21 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: linear-gradient(180deg, #F2F9F6 0%, #DBEDE5 100%);
+  --dark-color: #171717;
+  --light-color: #F2F9F6;
+  --white-color: white;
+  --main-color: #8EBD55;
+  --accent-color: #FBAD48;
+  --secondary-color: #34613A;
+  --main-font: "Sofia Sans";
+  font-size: 14px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*    --background: #0a0a0a;*/
+/*    --foreground: #ededed;*/
+/*  }*/
+/*}*/
 
 body {
-  color: var(--foreground);
+  color: var(--dark-color);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
